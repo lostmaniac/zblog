@@ -30,4 +30,4 @@ jobs:
         file: ./php8.2-cli/Dockerfile
         platforms: linux/amd64,linux/amd64
         push: true 
-        tags: ghcr.io/${{ github.repository }}-cli:latest
+        tags: ghcr.io/${{ github.repository }}:8.2-cli
