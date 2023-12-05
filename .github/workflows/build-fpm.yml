@@ -26,8 +26,8 @@ jobs:
     - name: 构建并推送
       uses: docker/build-push-action@v5
       with:
-        context: .
+        context: ./php8.2-fpm
         file: Dockerfile
         platforms: linux/amd64,linux/amd64
         push: true 
-        tags: ghcr.io/${{ github.repository }}:latest
+        tags: ghcr.io/${{ github.repository }}-fpm:latest
