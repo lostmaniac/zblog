@@ -28,6 +28,6 @@ jobs:
       with:
         context: ./php8.2-fpm
         file: ./php8.2-fpm/Dockerfile
-        platforms: linux/arm64,linux/amd64
+        platforms: linux/arm64/v8,linux/amd64
         push: true 
         tags: ghcr.io/${{ github.repository }}:8.2-fpm
