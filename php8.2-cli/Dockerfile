@@ -1,6 +1,6 @@
 FROM php:8.2.13-cli-alpine
 
-RUN apk add --no-cache zlib-dev libpng-dev libjpeg-turbo-dev freetype-dev libwebp-dev autoconf libssl-dev \
+RUN apk add --no-cache zlib-dev libpng-dev libjpeg-turbo-dev freetype-dev libwebp-dev autoconf libssl3 \
     && docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp \
     && pecl install redis mongodb \
     docker-php-ext-configure mongodb --with-mongodb-ssl \
